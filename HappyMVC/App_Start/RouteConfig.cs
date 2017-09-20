@@ -15,8 +15,8 @@ namespace HappyMVC
 
             routes.MapRoute(
                 name: "Default",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                url: "{controller}/{action}/{fileName}",
+                defaults: new { controller = "Home", action = "Index", fileName = UrlParameter.Optional }
             );
         }
     }
